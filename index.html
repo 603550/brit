@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigMitzvah.org</title>
+
+    <!-- Prevent caching -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="Mon, 01 Jan 2030 12:00:00 GMT">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Brit Milah Kakon">
+    <meta property="og:image" content="/card.png">
+    <meta property="og:url" content="https://brit.kakon.ca">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="Brit Milah Kakon">
+    <meta name="twitter:title" content="Brit Milah Kakon">
+    <meta name="twitter:image" content="/card.png">
+
+    <!-- Google Font: Cinzel (Trajan style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background-color:#F0ECE0;
+            font-family: 'Cinzel', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        img.image {
+            max-width: 90%;
+            height: auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,.35);
+        }
+
+        /* Overlay for popup */
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        /* Popup box */
+        .popup {
+            background: rgba(255,255,255,0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 6px 24px rgba(0,0,0,.3);
+        }
+
+        .popup h1 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .popup p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .close-btn {
+            margin-top: 1.5rem;
+            padding: 0.6rem 1rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Popup -->
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <h1>Note Importante</h1>
+            <p>
+                Par respect pour la sainteté du Chabbat et de cette mitzvah, nous demandons à tous de ne pas venir en voiture. Les invités qui ne peuvent pas marcher pendant Chabbat sont chaleureusement invités à se joindre à nous après Chabbat pour la cérémonie de Havdallah et la célébration de la Melavé Malka à 21 h.<strong>19h</strong>.
+            </p>
+            <button class="close-btn" onclick="window.location.href='https://pp.events/bQAX7R3Y'">Continuez</button>
+        </div>
+    </div>
+
+    <!-- Card -->
+    <img class="image" src="/card.png" alt="Brit Milah Kakon" />
+</body>
+</html>
